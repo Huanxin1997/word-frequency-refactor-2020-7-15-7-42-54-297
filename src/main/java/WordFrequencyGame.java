@@ -29,8 +29,8 @@ public class WordFrequencyGame {
 
                 List<WordInfo> tempWordInfos = new ArrayList<>();
                 for (Map.Entry<String, List<WordInfo>> entry : map.entrySet()) {
-                    WordInfo input = new WordInfo(entry.getKey(), entry.getValue().size());
-                    tempWordInfos.add(input);
+                    WordInfo wordInfo = new WordInfo(entry.getKey(), entry.getValue().size());
+                    tempWordInfos.add(wordInfo);
                 }
                 wordInfos = tempWordInfos;
 
